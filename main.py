@@ -1,0 +1,5 @@
+print("Hi!My name is athul")
+print(5+9)
+print("HI!My name is Athul",9)
+print("I am learning codingal \n")
+print("My age is",10,end="*")
