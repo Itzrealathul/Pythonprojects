@@ -1,5 +1,11 @@
-print("Hi!My name is athul")
-print(5+9)
-print("HI!My name is Athul",9)
-print("I am learning codingal \n")
-print("My age is",10,end="*")
+attendance=input("Enter your attedance of class:")
+medical_cause=input("Did you have meadical cause?")
+if attendance>=75:
+    print("You are allowed to attend the exam")
+
+else:
+    if(medical_cause=='y'or medical_cause=='Y'):
+        print("You are allowed to attend the exam")
+    
+    else:
+        print("You are not allowed")
