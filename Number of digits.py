@@ -3,5 +3,5 @@ count=1
 while n>=10:
    n=n//10
    count=count+1
-print("The numb
+print("The number of digits is",count)
     
