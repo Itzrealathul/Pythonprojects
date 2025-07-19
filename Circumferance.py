@@ -1,6 +1,6 @@
-p = float(input("Enter the radius to find the circumferance of the circle:"))
+p = float(input("Enter the radius of the circle:"))
 q = 3.14
-
-
-def multiply(p, q):
-    print("The product is",multiply (p,q))
+def circumferance(p, q):
+    c=2*p*q
+    print("The circumferance is",c)
+circumferance(p,q)
