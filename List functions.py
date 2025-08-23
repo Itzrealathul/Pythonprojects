@@ -1,0 +1,5 @@
+print([x**2 for x in range(10)])
+print([x for x in range(20) if x % 2 == 0])
+print([num for row in [[1,2],[3,4],[5,6]] for num in row])
+print([x if x % 2==0 else 0 for x in range(10)])
+print([x for x in range(1,101) if x % 3 == 0 and x % 5 == 0])
