@@ -63,4 +63,16 @@ def game():
                 print("****",+turn+"won")
                 break
     if count==9:
-        print("Game over!,it is a tie")    
+       print("Game over!,it is a tie")    
+    if turn=='X':
+       turn='0'
+    else:
+       turn='X'
+    restart=input("Do you want to play again?")
+    if restart=="Y" or restart == "y":
+        for key in boardkeys:
+                Theboard[key]=" "
+        game()
+if __name__=="_main_":
+        game()
+        
