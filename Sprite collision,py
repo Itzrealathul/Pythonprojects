@@ -1,0 +1,36 @@
+import pygame 
+import random 
+width,height=500,500
+movementspeed=5
+fontsize=72
+pygame.init()
+backroundimage=pygame.transform.scale(pygame.image.load("Py background.jpg"),width,height)
+font=pygame.font.Sysfont("Times new roman",fontsize)
+class Sprite (pygame.sprite.Sprite):
+    def __init__(self,color,height,width):
+        super().__init__()
+        self.image=pygame.Surface([width,height])
+        self.image.fill(pygame.Color('Dodgerblue'))
+        pygame.draw.rect(self.image,color,pygame.Rect(0,0,width,height))
+        self.rect=self.image.get_rect()
+    def move(self,x_change,y_change):
+        self.rect.x=max(min(self.rect.x+x_change,width-self.rect.width),0)
+        self.rect.y=max(min(self.rect.y+y_change,height-self.rect.height),0)
+screen=pygame.display.set_mode((width,height))
+pygame.display.set_caption("Sprite collision")
+allsprite=pygame.sprite.Group()
+
+
+
+
+
+
+        
+    
+        
+        
+        
+        
+    
+
+
